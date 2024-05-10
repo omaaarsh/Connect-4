@@ -154,7 +154,7 @@ def PickBestMove(Board,piece):
 def IsTerminalNode(board):
 	return CheckWinner(board, PLAYER_PIECE) or CheckWinner(board, AI_PIECE) or len(GetValidLocations(board)) == 0
 
-#MiniMax algorithm 😘
+#MiniMax+Alpha+Beta+Pruning 😘
 def MiniMax(board, depth, alpha, beta, maximizingPlayer):
 	valid_locations = GetValidLocations(board)
 	is_terminal = IsTerminalNode(board)
