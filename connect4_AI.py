@@ -7,6 +7,11 @@ import math
 import random
 # intialize the pygame 
 pygame.init()
+#play music
+pygame.mixer.init()
+# Using a raw string
+pygame.mixer.music.load("/Users/compumagic/Downloads/connect 4/in_the_quiet_of_the_night_-_Quietness47.mp3")
+pygame.init()
 #Clear screen
 def ClearScreen():
     os.system('cls' if os.name == 'nt' else 'clear')
